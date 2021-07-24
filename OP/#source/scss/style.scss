@@ -1,0 +1,482 @@
+//<МИКСИНЫ>=============================================================================================
+//</МИКСИНЫ>=============================================================================================
+//<ШРИФТЫ>=============================================================================================
+
+//<Подключаем шрифты>=============================================================================================
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap");
+//</Подключаем шрифты>=============================================================================================
+
+//<Шрифт по умолчанию>=============================================================================================
+
+//</Шрифт по умолчанию>=============================================================================================
+
+//<ПЕРЕМЕННЫЕ>=============================================================================================
+$minwidth: 320px;
+//</ПЕРЕМЕННЫЕ>=============================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=============================================================================================
+@import "nullstyle.scss";
+
+body {
+	//height: 100%;
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>=============================================================================================
+
+//<ОБОЛОЧКА>=============================================================================================
+.wrapper {
+	position: relative;
+	max-width: 1600px;
+	max-height: 2687px;
+	margin: auto;
+	background-color: beige;
+}
+
+//</ОБОЛОЧКА>=============================================================================================
+
+//<ОСНОВНАЯ СЕТКА>=============================================================================================
+
+//</ОСНОВНАЯ СЕТКА>=============================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=============================================================================================
+@import "ui.scss";
+@import "header.scss";
+@import "footer.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=============================================================================================
+
+//<ОСНОВНОЙ БЛОК>=========================================================================
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: darkcyan;
+}
+
+//=========================================================================================
+.content {
+}
+//=========================================================================================
+.generation {
+	width: 1600px;
+	height: 567px;
+	display: flex;
+	flex: 1 0 100%;
+	background: url(/img/fons/Rectangle.jpg) center top/cover no-repeat;
+	margin: 83px 0 0 0;
+	&__block {
+	}
+	&__row {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+//=========================================================================================
+.block {
+	display: flex;
+	flex-direction: column;
+	width: 417px;
+	height: 276.24px;
+	margin: 0 0 93px 315px;
+
+	&__title {
+		width: 417px;
+		height: 112px;
+		font-family: Oswald;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 53px;
+		color: #0c0b48;
+		margin: 0 0 28px 0;
+		text-transform: uppercase;
+		span {
+			color: #ce24a8;
+		}
+	}
+	&__text {
+		width: 254px;
+		height: 51px;
+		font-family: Lato;
+		font-size: 15px;
+		line-height: 18px;
+		color: #0c0b48;
+		margin: 0 0 30px 0;
+	}
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 198px;
+		height: 56px;
+		background: #ce24a8;
+		box-shadow: 0px 20px 55px rgba(206, 36, 168, 0.1);
+		filter: drop-shadow(0px 20px 55px rgba(209, 41, 170, 0.5));
+		a {
+			font-family: Roboto;
+			font-size: 16px;
+			line-height: 19px;
+			text-align: center;
+			color: #ffffff;
+		}
+	}
+}
+//=========================================================================================
+
+.slider {
+	&__body {
+		width: 766px;
+		height: 415px;
+		margin: 0 0 30px 60px;
+	}
+
+	&__item {
+	}
+
+	&__video {
+	}
+}
+
+//=========================================================================================
+.banefit {
+	width: 1170px;
+	height: 171px;
+	margin: 75px auto;
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		width: 364px;
+		height: 49px;
+
+		font-family: Oswald;
+		font-weight: bold;
+		font-size: 33px;
+		line-height: 49px;
+
+		color: #0c0b48;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin: 50px 0 0 0;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 297px;
+		height: 72px;
+	}
+
+	&__icon {
+	}
+
+	&__text {
+		h3 {
+			font-family: Oswald;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 27px;
+			color: #0c0b48;
+			margin: 0 0 10px 0;
+		}
+		font-family: Lato;
+		font-size: 14px;
+		line-height: 17px;
+		margin: 0 0 0 28px;
+	}
+}
+//=========================================================================================
+.catalog {
+	width: 1600px;
+	height: 658px;
+	background: #f0f2ff;
+	&__row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		width: 323px;
+		height: 53px;
+		font-family: Oswald;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 53px;
+		color: #0c0b48;
+		margin: 31px 0 50px 217px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 1164px;
+		height: 449px;
+		margin: 0 0 0 217px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 368px;
+		height: 449px;
+		background: #ffffff;
+		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+	}
+
+	&__icon {
+		margin: 19px 0 57px;
+	}
+
+	&__text {
+		width: 280px;
+		height: 77px;
+		h3 {
+			font-family: Oswald;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 24px;
+
+			color: #0c0b48;
+			margin: 0 0 3.5px 0;
+		}
+		font-family: Lato;
+		font-size: 13px;
+		line-height: 119.18%;
+		margin: 0 12px 0 0;
+	}
+	&__cell {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 5.77px 50px 0 0;
+		width: 240px;
+		height: 36.47px;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 150.4px;
+		height: 36.47px;
+		border: 1px solid #ce24a8;
+		box-sizing: border-box;
+		margin: 0 0 0 0;
+		a {
+			width: 65px;
+			height: 15.79px;
+			font-family: Lato;
+			font-size: 13px;
+			line-height: 119.18%;
+			color: #0c0b48;
+		}
+	}
+	&__money {
+		width: 37.33px;
+		height: 21.18px;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+			"Helvetica Neue", sans-serif;
+		font-size: 15px;
+		line-height: 119.18%;
+		margin: 5px 10px 0 0;
+		color: #1fd81b;
+	}
+}
+
+//=========================================================================================
+.forma {
+	&__container {
+		width: 1600px;
+		height: 650px;
+		background: url(/img/fons/Background.jpg);
+	}
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		width: 215px;
+		height: 49px;
+		font-family: Oswald;
+		font-weight: 600;
+		font-size: 33px;
+		line-height: 49px;
+
+		color: #ffffff;
+		margin: 75px 0 50px 217px;
+	}
+
+	&__content {
+	}
+
+	&__item {
+	}
+
+	&__message {
+	}
+
+	&__button {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		width: 200px;
+		height: 55.63px;
+		border: 1px solid #ce24a8;
+		filter: drop-shadow(0px 20px 55px rgba(209, 41, 170, 0.5));
+		margin: 35px 0 68px 217px;
+		text-align: center;
+
+		input {
+			display: block;
+			width: 97.22px;
+			height: 19.77px;
+			font-family: Roboto;
+			font-size: 16px;
+			line-height: 19px;
+			color: #ffffff;
+			margin: auto;
+			background: transparent;
+			border: none;
+			outline: none;
+		}
+	}
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 68px 215px;
+	width: 870px;
+	height: 60px;
+	&__section {
+		display: flex;
+		flex-direction: column;
+
+		&::after {
+			content: "";
+			display: block;
+			width: 370px;
+			height: 0px;
+			left: 214px;
+			top: 1835px;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			margin: -10px 0 0 0;
+		}
+	}
+	label {
+		display: block;
+		padding-left: 0;
+		font-family: "Roboto", sans-serif;
+		color: rgba(255, 255, 255, 0.6);
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+
+	&__name {
+		display: block;
+		width: 370px;
+		height: 32px;
+		border-width: 0;
+		line-height: 40px;
+		color: white;
+		font-family: "Roboto", sans-serif;
+		background: transparent;
+		border: none;
+		outline: none;
+	}
+
+	&__email {
+		width: 370px;
+		height: 32px;
+		border-width: 0;
+		line-height: 40px;
+		color: white;
+		background: rgba(255, 255, 255, 0.2);
+		font-family: "Roboto", sans-serif;
+		background: transparent;
+		border: none;
+		outline: none;
+	}
+
+	&__phone {
+		width: 370px;
+		height: 32px;
+		border-width: 0;
+		line-height: 40px;
+		color: white;
+		background: rgba(255, 255, 255, 0.2);
+		font-family: "Roboto", sans-serif;
+		background: transparent;
+		border: none;
+		outline: none;
+	}
+
+	&__subject {
+		width: 370px;
+		height: 32px;
+		border-width: 0;
+		line-height: 40px;
+		color: white;
+		background: rgba(255, 255, 255, 0.2);
+		font-family: "Roboto", sans-serif;
+		background: transparent;
+		border: none;
+		outline: none;
+	}
+}
+
+.message {
+	margin: 0 0 0 215px;
+	&::after {
+		content: "";
+		display: block;
+		width: 870px;
+		height: 0px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		transform: matrix(1, 0, 0, 1, 0, 0);
+		margin: -22px 0 0 0;
+	}
+	label {
+		display: block;
+		font-family: "Roboto", sans-serif;
+		color: rgba(255, 255, 255, 0.6);
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	&__text {
+		width: 870px;
+		height: 59px;
+		border-width: 0;
+		line-height: 40px;
+		color: white;
+		background: rgba(255, 255, 255, 0.2);
+		font-family: "Roboto", sans-serif;
+		background: transparent;
+		border: none;
+		outline: none;
+	}
+}
+
+//=========================================================================================
+
+//</ОСНОВНОЙ БЛОК>=========================================================================
