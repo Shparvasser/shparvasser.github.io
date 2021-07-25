@@ -1,0 +1,418 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  margin: auto;
+  width: 1200px;
+  height: 1320px;
+  background: #e5e5e5;
+  font-family: Montserrat;
+}
+
+body .conteiner {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+body .left {
+  width: 370px;
+  height: 1320px;
+  background: #1e2939;
+}
+
+body .contacts h3 {
+  display: inline-block;
+  margin: 51px 0 0 40px;
+  width: 104px;
+  height: 27px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+body .contacts a {
+  margin: 0 0 8px 10px;
+  width: 157px;
+  height: 48px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+body .contacts span {
+  margin: 0 0 8px 40px;
+  width: 26px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+body .myphoto {
+  margin: 80px 0 0 0;
+  width: 370px;
+  height: 354px;
+}
+
+body .tech__skills {
+  margin: 47px 0 8px 40px;
+  width: 121px;
+  height: 27px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+body .tech ul {
+  margin: 0 0 0 56px;
+  width: 72px;
+  height: 168px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body .tech ul li {
+  list-style-type: disc;
+  color: #fb6d3a;
+}
+
+body .tech ul li span {
+  color: #ffffff;
+}
+
+body .soft__skills {
+  margin: 44px 0 8px 40px;
+  width: 113px;
+  height: 27px;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+body .soft ul {
+  margin: 0 0 0 56px;
+  width: 74px;
+  height: 96px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body .soft ul li {
+  list-style-type: disc;
+  color: #fb6d3a;
+}
+
+body .soft ul li span {
+  color: #ffffff;
+}
+
+body .text-intro h2 {
+  margin: 102px 589px 19px 88px;
+  width: 153px;
+  height: 17px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+body .text-intro h1 {
+  margin: 0 400px 24px 88px;
+  width: 342px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  color: #000000;
+}
+
+body .text {
+  margin: 0 342px 0 88px;
+  width: 400px;
+  height: 120px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body .projects h3 {
+  margin: 40px 0 8px 88px;
+  width: 95px;
+  height: 27px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+
+body .projects ol {
+  margin: 0 0 0 106px;
+}
+
+body .projects ol li {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+body .projects ol li span {
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+body .workexperiance h3 {
+  margin: 51px 0 12px 88px;
+  width: 198px;
+  height: 27px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+
+body .workexperiance .company-one h4 {
+  margin: 0 0 11px 88px;
+  width: 262px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+body .workexperiance .company-one h4 span {
+  color: #fb6d3a;
+}
+
+body .workexperiance .company-one p {
+  margin: 0 0 0 88px;
+  display: inline-block;
+  width: 240px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+body .workexperiance .company-one ul {
+  margin: 8px 0 0 104px;
+  width: 509px;
+  height: 120px;
+}
+
+body .workexperiance .company-one ul li {
+  list-style-type: disc;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+body .workexperiance .company-two h4 {
+  margin: 0 0 11px 88px;
+  width: 245px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+body .workexperiance .company-two h4 span {
+  color: #fb6d3a;
+}
+
+body .workexperiance .company-two p {
+  margin: 0 0 0 88px;
+  display: inline-block;
+  width: 228px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+body .workexperiance .company-two ul {
+  margin: 8px 0 0 104px;
+  width: 509px;
+  height: 96px;
+}
+
+body .workexperiance .company-two ul li {
+  list-style-type: disc;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+body .workexperiance .company-three h4 {
+  margin: 0 0 11px 88px;
+  width: 238px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+body .workexperiance .company-three h4 span {
+  color: #fb6d3a;
+}
+
+body .workexperiance .company-three p {
+  margin: 0 0 0 88px;
+  display: inline-block;
+  width: 225px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+body .workexperiance .company-three ul {
+  margin: 8px 0 0 104px;
+  width: 509px;
+  height: 72px;
+}
+
+body .workexperiance .company-three ul li {
+  list-style-type: disc;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+body .education h3 {
+  margin: 43px 0 12px 88px;
+  width: 118px;
+  height: 27px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+}
+
+body .education h4 {
+  margin: 0 0 11px 88px;
+  width: 327px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fb6d3a;
+}
+
+body .education h5 {
+  margin: 0 0 12px 88px;
+  width: 99px;
+  height: 17px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+body .education P {
+  margin: 0 0 0 88px;
+  width: 242px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
